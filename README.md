@@ -8,7 +8,7 @@
 
 > **The Reporter**
 >
-> 31 August 2022
+> 3 September 2023
 
 `(Andra)` — For months now, the neighborhoods in the suburbs of `term-world` have been ghost towns. The once-bustling streets of communities like `Andra` and `Folivoria` have been host to little more than the occasional tumbleweed ever since local property owner **The Landlord** raised rent rates to untenable levels in an attempt to only bring the best and brightest (and wealthiest) to our fair `term-world`.
 

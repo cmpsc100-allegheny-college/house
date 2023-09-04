@@ -31,7 +31,7 @@ The requirements of this exercise center on your ability to find your way around
 
 ### Creating an Assignment Repository
 
-Click on the [house assignment link](https://classroom.github.com/a/hr0MeXJf) and accept the assignment to see a repository, called `house`, created with your GitHub username at the end of its name.
+Click on the [house assignment link](https://classroom.github.com/a/g4MvyqpB) and accept the assignment to see a repository, called `house`, created with your GitHub username at the end of its name.
 
 ### SSH Keys
 

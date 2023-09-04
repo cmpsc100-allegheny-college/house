@@ -12,7 +12,7 @@ class TubeShapedBox(BoxSpec):
 def main():
 
     n = narrator.Narrator()
-    n.path.change(3)
+    n.path.change({"act": 3, "scene": 0})
     n.narrate()
     
     q = narrator.YesNoQuestion({

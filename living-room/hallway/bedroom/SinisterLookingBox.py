@@ -12,7 +12,7 @@ class SinisterLookingBox(BoxSpec):
 def main():
     
     n = narrator.Narrator()
-    n.path.change(4)
+    n.path.change({"act": 4, "scene": 0})
     n.narrate()
 
     q = narrator.YesNoQuestion({

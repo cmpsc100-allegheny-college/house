@@ -12,7 +12,7 @@ class FragileBox(BoxSpec):
 def main():
     
     n = narrator.Narrator()
-    n.path.change(1)
+    n.path.change({"act": 1, "scene": 0})
     n.narrate()
     
     q = narrator.YesNoQuestion({

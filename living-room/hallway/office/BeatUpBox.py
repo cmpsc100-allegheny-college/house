@@ -12,7 +12,7 @@ class BeatUpBox(BoxSpec):
 def main():
 
     n = narrator.Narrator()
-    n.path.change(5.0)
+    n.path.change({"act": 5, "scene": 0})
     n.narrate()
     
     q = narrator.YesNoQuestion({

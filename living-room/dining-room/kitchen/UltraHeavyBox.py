@@ -13,7 +13,7 @@ class UltraHeavyBox(BoxSpec):
 def main():
 
     n = narrator.Narrator()
-    n.path.change(2)
+    n.path.change({"act": 2, "scene": 0})
     n.narrate()
     
     q = narrator.YesNoQuestion({

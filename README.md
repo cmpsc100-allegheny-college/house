@@ -1,7 +1,7 @@
 | Date              |          |
 |:------------------|:---------|
-| TODO | Assigned |
-| TODO    | Due      |
+| 4 September | Assigned |
+| 11 September    | Due      |
 | Status            | [![GatorGrader](../../actions/workflows/main.yml/badge.svg)](../../actions/workflows/main.yml) |
 
 # SUDDEN SURGE OF RESIDENTIAL RENTERS: LOCAL LANDLORD MAKES A MODEST MINT

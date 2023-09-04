@@ -12,12 +12,12 @@ class BeatUpBox(BoxSpec):
 def main():
 
     n = narrator.Narrator()
-    n.path.change(5.0)
+    n.path.change({"act": 5, "scene": 0})
     n.narrate()
     
     q = narrator.YesNoQuestion({
         "question": "Open the box?",
-        "outcomes": [5.1, 5.8]
+        "outcomes": [{"act": 5, "scene": 1}, {"act": 5, "scene": 8}]
     })
     
     n.path.change(q.ask())
@@ -30,12 +30,12 @@ def main():
     q = narrator.Question({
         "question": "Where will you place the `busted-tv.py`?",
         "responses": [
-            {"choice": "living-room", "outcome": 5.2},
-            {"choice": "dining-room", "outcome": 5.3},
-            {"choice": "kitchen", "outcome": 5.4},
-            {"choice": "hallway", "outcome": 5.5},
-            {"choice": "bedroom", "outcome": 5.6},
-            {"choice": "office", "outcome": 5.7}
+            {"choice": "living-room", "outcome": {"act": 5, "scene": 2}},
+            {"choice": "dining-room", "outcome": {"act": 5, "scene": 3}},
+            {"choice": "kitchen", "outcome": {"act": 5, "scene": 4}},
+            {"choice": "hallway", "outcome": {"act": 5, "scene": 5}},
+            {"choice": "bedroom", "outcome": {"act": 5, "scene": 6}},
+            {"choice": "office", "outcome": {"act": 5, "scene": 7}}
         ]
     })
 

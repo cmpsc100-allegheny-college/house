@@ -12,12 +12,12 @@ class FragileBox(BoxSpec):
 def main():
     
     n = narrator.Narrator()
-    n.path.change(1)
+    n.path.change({"act": 1, "scene": 0})
     n.narrate()
     
     q = narrator.YesNoQuestion({
         "question": "Open the box?",
-        "outcomes": [1.1, 1.8]
+        "outcomes": [{"act": 1, "scene": 1}, {"act": 1, "scene": 8}]
     })
     
     n.path.change(q.ask())
@@ -30,12 +30,12 @@ def main():
     q = narrator.Question({
         "question": "Where will you place the `Printer.py`?",
         "responses": [
-            {"choice": "living-room", "outcome": 1.2},
-            {"choice": "dining-room", "outcome": 1.3},
-            {"choice": "kitchen", "outcome": 1.4},
-            {"choice": "hallway", "outcome": 1.5},
-            {"choice": "bedroom", "outcome": 1.6},
-            {"choice": "office", "outcome": 1.7}
+            {"choice": "living-room", "outcome": {"act": 1, "scene": 2}},
+            {"choice": "dining-room", "outcome": {"act": 1, "scene": 3}},
+            {"choice": "kitchen", "outcome": {"act": 1, "scene": 4}},
+            {"choice": "hallway", "outcome": {"act": 1, "scene": 5}},
+            {"choice": "bedroom", "outcome": {"act": 1, "scene": 6}},
+            {"choice": "office", "outcome": {"act": 1, "scene": 7}}
         ]
     })
 

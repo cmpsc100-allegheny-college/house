@@ -12,12 +12,12 @@ class TubeShapedBox(BoxSpec):
 def main():
 
     n = narrator.Narrator()
-    n.path.change(3)
+    n.path.change({"act": 3, "scene": 0})
     n.narrate()
     
     q = narrator.YesNoQuestion({
         "question": "Open the box?",
-        "outcomes": [3.1, 3.8]
+        "outcomes": [{"act": 3, "scene": 8}, {"act": 3, "scene": 8}]
     })
 
     n.path.change(q.ask())
@@ -30,12 +30,12 @@ def main():
     q = narrator.Question({
         "question": "Where will you place the `GameCylinder.py`?",
         "responses": [
-            {"choice": "living-room", "outcome": 3.2},
-            {"choice": "dining-room", "outcome": 3.3},
-            {"choice": "kitchen", "outcome": 3.4},
-            {"choice": "hallway", "outcome": 3.5},
-            {"choice": "bedroom", "outcome": 3.6},
-            {"choice": "office", "outcome": 3.7}
+            {"choice": "living-room", "outcome": {"act": 3, "scene": 2}},
+            {"choice": "dining-room", "outcome": {"act": 3, "scene": 3}},
+            {"choice": "kitchen", "outcome": {"act": 3, "scene": 4}},
+            {"choice": "hallway", "outcome": {"act": 3, "scene": 5}},
+            {"choice": "bedroom", "outcome": {"act": 3, "scene": 6}},
+            {"choice": "office", "outcome": {"act": 3, "scene": 7}}
         ]
     })
     

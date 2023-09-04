@@ -35,20 +35,26 @@ Click on the [house assignment link](https://classroom.github.com/a/xFmXntHq) an
 
 ### SSH Keys
 
-The activities for your first week in `term-world` all take place in your `house`. In order to access this material, you will first need to set up an `SSH` key. While we will cover this in class, here's a (long-ish) video detailing the process should you need a reminder later:
+The activities for your first week in `term-world` all take place in your `house`. In order to access this material, you will first need to set up an `SSH` key. While we will cover this in class, here is a (long-ish) video detailing the process should you need a reminder later:
 
 [![SSH Key video]( http://img.youtube.com/vi/qEPjUGQFmzQ/hqdefault.jpg)](https://www.youtube.com/watch?v=qEPjUGQFmzQ&list=PLsYZRXov75ZHSwWiCk0-jd1RcTuu_-zmD&index=1)
 
-### Basic navigation
+### Getting the contents of your `house`
 
-Once your SSH key is set up, you'll need to create your `house` folder by copying a command from your house repository on GitHub's web interface, as shown below.
+Right now, your neighborhood is pretty empty. The output of another command, `ls` will show you this. `ls` is short for "list." Given that there is nothing there, it would be helpful to have a house with _stuff_. Any time you want to _list_ a directory (i.e., see what is there) just type `ls` and press `Enter`.
+
+Once your SSH key is set up, you will need to create your `house` populated wuth your things. They are currently stored on GitHub, the platform we use to do something called "versioning" our files. As with everything in our time in `term-world`, we will get plenty more experience with the customs and protocols of living in our digital society. You need to copy a command from your house repository on GitHub's web interface, as shown below.
 
 ![clone command](https://github.com/cmpsc100-allegheny-college/house/blob/main/clone.png)
 
-Now, navigate back to `term-world` and navigate into your house by running the following command in your terminal window: 
+Now, go back to `term-world` page, find a terminal window, `paste` the command you copied from GitHub and press `Enter`. This will `copy` all of the content for your house into _your_ `house` folder from the mysterious, but generous, "cloud" of `term-world`.
+
+## Basic navigation
+
+Now you can navigate into your house by running the following command in your terminal window: 
 
 ```
-cd ~/house
+cd ~/house-yourusername
 ```
 
 `cd` is short for "change directory," a command which moves you around the terminal to the various physical locations of `term-world`. The above command takes you _forward_, though you can also go _backward_ by using two "dots" (`..`) after your `cd` command _instead_ of the name of the folder you want to go to. For example:
@@ -68,20 +74,6 @@ jjumadinova@term-world:~$
 tells us that we are, well, ourselves (for me, it is `jjumadinova`) on the `term-world` server, at the `~` location (think of `~` as a shortcut to your _home_ directory, which is different from your _house_).
 
 This takes some time to adjust to; getting moved in to your house will give you more than enough practice.
-
-### Getting the contents of your `house`
-
-Right now, the house is pretty empty. The output of another command, `ls` will show you this. Like `cd`, `ls` is short for something. In this case: "list." Given that there is nothing there, it would be helpful to have _stuff_. Any time you want to _list_ a directory (i.e., see what is there) just type `ls` and press `Enter`.
-
-If youve navigated away from your `house` folder, `cd` back to it. However, if you are there, we can populate your house with your things. They are currently stored on GitHub, the platform we use to do something called "versioning" our files. As with everything in our time in `term-world`, we will get plenty more experience with the customs and protocols of living in our digital society.
-
-Once you are in your `house folder`, locate the `Version Control` menu at the right side of your VS Code screen and locate the `Pull` option:
-
-![VS Code source control menu](https://user-images.githubusercontent.com/1552764/213094317-4e2f580c-b70b-4a2c-b9b2-91d2eaa39fbe.png)
-
-As with _every_ operation we do with GitHub, you will need to provide the password for the `SSH` key we made earlier. This is a regular feature of our work; you will get used to entering this password on a regular basis.
-
-This will `pull` all of the content for your house into _your_ `house` folder from the mysterious, but generous, "cloud" of `term-world`.
 
 ### Map of the `house`
 

@@ -18,7 +18,7 @@ def main():
     
     q = narrator.YesNoQuestion({
         "question": "Open the box?",
-        "outcomes": [2.1, 2.8]
+        "outcomes": [{"act": 1, "scene": 1}, {"act": 1, "scene": 8}]
     })
     
     n.path.change(q.ask())
@@ -31,12 +31,12 @@ def main():
     q = narrator.Question({
         "question": "Where will you place the `Couch.py`?",
         "responses": [
-            {"choice": "living-room", "outcome": 2.2},
-            {"choice": "dining-room", "outcome": 2.3},
-            {"choice": "kitchen", "outcome": 2.4},
-            {"choice": "hallway", "outcome": 2.5},
-            {"choice": "bedroom", "outcome": 2.6},
-            {"choice": "office", "outcome": 2.7}
+            {"choice": "living-room", "outcome": {"act": 2, "scene": 2}},
+            {"choice": "dining-room", "outcome": {"act": 2, "scene": 3}},
+            {"choice": "kitchen", "outcome": {"act": 2, "scene": 4}},
+            {"choice": "hallway", "outcome": {"act": 2, "scene": 5}},
+            {"choice": "bedroom", "outcome": {"act": 2, "scene": 6}},
+            {"choice": "office", "outcome": {"act": 2, "scene": 7}}
         ]
     })
 

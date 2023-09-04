@@ -18,7 +18,7 @@ def main():
     
     q = narrator.YesNoQuestion({
         "question": "Open the box?",
-        "outcomes": [{"act": 1, "scene": 1}, {"act": 1, "scene": 8}]
+        "outcomes": [{"act": 2, "scene": 1}, {"act": 2, "scene": 8}]
     })
     
     n.path.change(q.ask())
